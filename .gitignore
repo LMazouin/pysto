@@ -1,0 +1,4 @@
+assets/
+tests.html
+
+.pytest-cache
