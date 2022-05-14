@@ -1,4 +1,6 @@
-assets/
+**/assets
 tests.html
+
+**/__pychache
 
 .pytest-cache
