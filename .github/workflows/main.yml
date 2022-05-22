@@ -38,5 +38,5 @@ jobs:
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       - name: Install Dependencies
         run: poetry install
-      - name: Executeunit tests
+      - name: Run unit tests
         run: poetry run pytest
