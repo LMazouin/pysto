@@ -46,3 +46,7 @@ class TestBinomialCoefficient(unittest.TestCase):
         result = binomial_coefficient(5, 2)
         self.assertAlmostEqual(expected, result)
         print("Test binomial coefficients")
+
+class TestGeneralizedBinomialCoefficient(unittest.TestCase):
+    def test_generalized_binomial_coefficient(self):
+        pass
