@@ -24,6 +24,8 @@ def binomial_coefficient(n: int, k: int) -> float:
     return float(comb(n, k, exact=True))
 
 def generalized_binomial_coefficient(n: int, np: int, m:int)->float: 
+    if m > n + np:
+        raise ValueError();
     kinf = ((m - n) + abs(m - n)) // 2
     ksup = min(m, np)
     s = 0.0
