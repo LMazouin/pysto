@@ -48,7 +48,7 @@ class TestBinomialCoefficient(unittest.TestCase):
         print("Test binomial coefficients")
 
 class TestGeneralizedBinomialCoefficient(unittest.TestCase):
-    def test_generalized_binomial_coefficient(self):
+    def test_generalized_binomial_coefficient_wrong_arguments(self):
         with self.assertRaises(ValueError):
             generalized_binomial_coefficient(1, 1, 3)
     def test_generalized_binomial_coefficient(self):
