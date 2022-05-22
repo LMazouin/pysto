@@ -1,7 +1,7 @@
 import unittest
 from unittest import result
 
-from pysto.utils.special_functions import binomial_coefficient, factorial, factorial2
+from pysto.utils.special_functions import binomial_coefficient, factorial, factorial2, generalized_binomial_coefficient
 
 
 class TestFactorial(unittest.TestCase):
@@ -49,4 +49,5 @@ class TestBinomialCoefficient(unittest.TestCase):
 
 class TestGeneralizedBinomialCoefficient(unittest.TestCase):
     def test_generalized_binomial_coefficient(self):
-        pass
+        with self.assertRaises(ValueError):
+            generalized_binomial_coefficient(1, 1, 3)
