@@ -52,4 +52,6 @@ class TestGeneralizedBinomialCoefficient(unittest.TestCase):
         with self.assertRaises(ValueError):
             generalized_binomial_coefficient(1, 1, 3)
     def test_generalized_binomial_coefficient(self):
-        pass
+        expected = 1.0
+        result = generalized_binomial_coefficient(0,0,0)
+        self.assertAlmostEqual(expected, result)
