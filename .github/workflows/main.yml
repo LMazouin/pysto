@@ -1,7 +1,7 @@
 name: Use Python Poetry cache on GitHub Actions workflow
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
